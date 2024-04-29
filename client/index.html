@@ -38,23 +38,37 @@
 </section>
 
     
-    <!-- Carrossel de imagens das stacks -->
-    <section id="carouselStacks" class="mb-12">
-        <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
-            <div class="carousel-inner">
-                <div class="carousel-item active">
-                    <img src="stack1.jpg" class="w-full" alt="Stack 1">
-                </div>
-                <div class="carousel-item">
-                    <img src="stack2.jpg" class="w-full" alt="Stack 2">
-                </div>
-                <!-- Adicione mais imagens conforme necessário -->
-                <!-- <div class="carousel-item">
-                    <img src="stack3.jpg" class="w-full" alt="Stack 3">
-                </div> -->
-            </div>
+<div id="carousel" class="overflow-x-auto whitespace-nowrap">
+    <div id="carouselStacks" class="mb-12 flex">
+        <div class="carousel-item flex-none mr-4">
+            <img src="/client/imagens/carrossel/html.png" class="w-20 h-27" alt="stack 1">
         </div>
-    </section>
+        <div class="carousel-item flex-none mr-4">
+            <img src="/client/imagens/carrossel/js.png" class="w-20 h-27" alt="stack 2">
+        </div>
+        <div class="carousel-item flex-none mr-4">
+            <img src="/client/imagens/carrossel/nodejs.png" class="w-20 h-27" alt="stack 1">
+        </div>
+        <div class="carousel-item flex-none mr-4">
+            <img src="/client/imagens/carrossel/github.png" class="w-20 h-27" alt="stack 1">
+        </div>
+        <div class="carousel-item flex-none mr-4">
+            <img src="/client/imagens/carrossel/sass.png" class="w-20 h-27" alt="stack 1">
+        </div>
+        <div class="carousel-item flex-none mr-4">
+            <img src="/client/imagens/carrossel/typescript.png" class="w-20 h-27" alt="stack 1">
+        </div>
+        <!-- Adicione mais imagens conforme necessário -->
+        <!-- <div class="carousel-item">
+            <img src="stack3.jpg" class="w-full" alt="Stack 3">
+        </div> -->
+    </div>
+</div>
+
+<button onclick="prevSlide()">Anterior</button>
+<button onclick="nextSlide()">Próximo</button>
+
+<script src="carrossel.js"></script>
     
     <div class="container mx-auto text-center">
         <button class="bg-blue-700 text-white py-3 px-6 rounded-lg hover:bg-blue-900">Ver Portfólio</button>
