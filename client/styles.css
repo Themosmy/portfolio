@@ -1,23 +1,33 @@
+/* Estilizando o corpo do documento */
 body {
-    font-family: Arial, sans-serif;
+    font-family: Montserrat, sans-serif; /* Aplicando a fonte Montserrat em todo o documento */
     margin: 0;
     padding: 0;
 }
 
+/* Estilizando o cabeçalho */
 header {
     background-color: #333;
     color: #fff;
     padding: 20px;
+    background: #0073CF;
+    text-align: center;
 }
 
+/* Estilizando o título principal */
 header h1 {
-    margin: 0;
+    font-family: Roboto; /* Mantendo Roboto para o título principal */
+    font-weight: bold;
+    margin: 1;
+    font-size: 30px;
 }
 
+/* Estilizando a barra de navegação */
 nav ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
+    font-size: 15px;
 }
 
 nav ul li {
@@ -30,14 +40,53 @@ nav ul li a {
     color: #fff;
 }
 
-section {
-    padding: 50px 20px;
+/* Estilizando o container */
+.container {
+    text-align: center; /* Centralizar o conteúdo */
+    background:aliceblue;
+    height: 400px;
 }
 
-h2 {
+/* Estilizando o botão */
+.meu-botao {
+    background-color: #007bff;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease;
+}
+
+.meu-botao:hover {
+    background-color: #0056b3;
+}
+
+/* Estilizando as seções */
+section {
+    padding: 20px;
+    background-color: aliceblue;
+}
+
+/* Estilizando os títulos h1 em seções */
+h1 {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+/* Estilizando o título h2 na seção de destaque */
+#Destaque h2 {
+    font-size: 60px;
     color: #333;
 }
 
+/* Estilizando os parágrafos em seções */
+p {
+    font-family: Montserrat, sans-serif; /* Aplicando a fonte Montserrat para todos os parágrafos */
+}
+
+/* Estilizando os itens do portfólio */
 .portfolio-item {
     margin-bottom: 30px;
 }
@@ -49,6 +98,7 @@ h2 {
     border-radius: 5px;
 }
 
+/* Estilizando o rodapé */
 footer {
     background-color: #333;
     color: #fff;

@@ -4,53 +4,81 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Caio Henrique</title>
-    <link rel="stylesheet" href="styles.css">
+    <!-- Adicionando Tailwind CSS via CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
 </head>
-<body>
-    <header>
-        <h1>Portfólio de Projetos</h1>
+<body class="font-sans">
+    <header class="bg-blue-700 text-white py-6">
+        <h1 class="text-3xl font-bold">PORTFÓLIO PESSOAL</h1>
         <nav>
-            <ul>
-                <li><a href="#portfolio">Portfolio</a></li>
-                <li><a href="#contato">Contato</a></li>
+            <ul class="flex justify-center mt-4">
+                <li class="mr-6"><a href="#portfolio">Portfolio</a></li>
+                <li class="mr-6"><a href="#contato">Contato</a></li>
                 <li><a href="#blog-medium">Blog</a></li>
             </ul>
         </nav>
     </header>
     
-    <section id="Destaque">
-        <h2>Quem sou eu ?</h2>
-        <p>Eu estou no mercado a quase 3 Anos, desenvolvendo softwares. Crie Micro-SaaS, APIs, Servidores, testes, interfaces e algoritmos.
-        </p>
-        <p>Veja meus projetos abaixo dentro do meu portfolio no GitHub ou no meu site.</p>
+    <section id="Destaque" class="py-12 bg-gray-100">
+        <h2 class="text-4xl font-bold mb-4">DESENVOLVEDOR FULL STACK JAVASCRIPT</h2>
+        <p class="text-lg mb-8">Eu estou no mercado há quase 3 anos, desenvolvendo softwares. Crie Micro-SaaS, APIs, Servidores, testes, interfaces e algoritmos.</p>
+        <p class="text-lg mb-8">Veja meus projetos abaixo dentro do meu portfolio no GitHub ou no meu site.</p>
     </section>
-
-    <section id="portfolio de Projetos">
-        <h2>Caio Henrique</h2>
-        <div class="portfolio-item">
-            <img src="projeto1.jpg" alt="Projeto 1">
-            <h3>API GraphQL</h3>
-            <p>Aplicação web moderna utilizando GraphQL, uma tecnologia que revoluciona a forma como os dados são obtidos e manipulados. Com o GraphQL, podemos oferecer uma experiência de usuário responsiva e dinâmica, permitindo que os clientes solicitem exatamente os dados de que precisam, evitando sobrecarga de informações desnecessárias. Nossa equipe trabalha de forma ágil e iterativa, aproveitada</p>
+    
+    <!-- Carrossel de imagens das stacks -->
+    <section id="carouselStacks" class="mb-12">
+        <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="stack1.jpg" class="w-full" alt="Stack 1">
+                </div>
+                <div class="carousel-item">
+                    <img src="stack2.jpg" class="w-full" alt="Stack 2">
+                </div>
+                <!-- Adicione mais imagens conforme necessário -->
+                <!-- <div class="carousel-item">
+                    <img src="stack3.jpg" class="w-full" alt="Stack 3">
+                </div> -->
+            </div>
         </div>
-        <div class="portfolio-item">
-            <img src="projeto2.jpg" alt="Projeto 2">
-            <h3>Testes unitários</h3>
-            <p>O teste de unidade é fundamental no desenvolvimento de software, pois verifica se unidades individuais de código, como funções ou métodos, estão funcionando conforme o esperado. Ele ajuda a identificar e corrigir problemas no nível mais básico do código, promovendo uma base sólida para o desenvolvimento do sistema como um todo. Além disso, os testes de unidade fornecem uma cobertura inicial para garantir que novas funcionalidades ou alterações não quebrem o código existente. Em resumo, o teste de unidade é o alicerce sobre o qual se constrói a qualidade do software.</p>
+    </section>
+    
+    <div class="container mx-auto text-center">
+        <button class="bg-blue-700 text-white py-3 px-6 rounded-lg hover:bg-blue-900">Ver Portfólio</button>
+    </div>
+
+    <section id="portfolio de Projetos" class="py-12">
+        <h2 class="text-3xl font-bold mb-8">Alguns dos meus Projetos</h2>
+        <div class="flex flex-wrap justify-center">
+            <div class="w-full md:w-1/2 lg:w-1/3 px-4 mb-8">
+                <div class="bg-white rounded-lg p-6">
+                    <img src="projeto1.jpg" class="w-full mb-4 rounded-lg" alt="Projeto 1">
+                    <h3 class="text-xl font-bold mb-2">API GraphQL</h3>
+                    <p class="text-lg">Aplicação web moderna utilizando GraphQL, uma tecnologia que revoluciona a forma como os dados são obtidos e manipulados. Com o GraphQL, podemos oferecer uma experiência de usuário responsiva e dinâmica, permitindo que os clientes solicitem exatamente os dados de que precisam, evitando sobrecarga de informações desnecessárias. Nossa equipe trabalha de forma ágil e iterativa, aproveitada</p>
+                </div>
+            </div>
+            <div class="w-full md:w-1/2 lg:w-1/3 px-4 mb-8">
+                <div class="bg-white rounded-lg p-6">
+                    <img src="projeto2.jpg" class="w-full mb-4 rounded-lg" alt="Projeto 2">
+                    <h3 class="text-xl font-bold mb-2">Testes unitários</h3>
+                    <p class="text-lg">O teste de unidade é fundamental no desenvolvimento de software, pois verifica se unidades individuais de código, como funções ou métodos, estão funcionando conforme o esperado. Ele ajuda a identificar e corrigir problemas no nível mais básico do código, promovendo uma base sólida para o desenvolvimento do sistema como um todo. Além disso, os testes de unidade fornecem uma cobertura inicial para garantir que novas funcionalidades ou alterações não quebrem o código existente. Em resumo, o teste de unidade é o alicerce sobre o qual se constrói a qualidade do software.</p>
+                </div>
+            </div>
+            <!-- Adicione mais projetos conforme necessário -->
         </div>
-        <!-- Adicione mais projetos conforme necessário -->
     </section>
 
-    <section id="contato"><h3>Contato Profissional</h3>
-    <ul>
-      <li><strong>WhatsApp:</strong> <a href="https://wa.me/5511951558872"></a>+55 11 95155-8872</li>
-      <li><strong>Email:</strong> <a href="mailto:hcaio8967@gmail.com">hcaio8967@gmail.com</a></li>
-    <li><strong>GitHub:</strong> <a href="https://github.com/Themosmy">Themosmy</a></li>
-    </ul>
+    <section id="contato" class="py-12">
+        <h3 class="text-3xl font-bold mb-8 text-center">Contato Profissional</h3>
+        <ul class="text-lg text-center">
+            <li><strong>WhatsApp:</strong> <a href="https://wa.me/5511951558872">+55 11 95155-8872</a></li>
+            <li><strong>Email:</strong> <a href="mailto:hcaio8967@gmail.com">hcaio8967@gmail.com</a></li>
+            <li><strong>GitHub:</strong> <a href="https://github.com/Themosmy">Themosmy</a></li>
+        </ul>
     </section>
 
-    <footer>
+    <footer class="bg-gray-900 text-white py-6 text-center">
         <p>&copy; 2024 Meu Portfólio</p>
     </footer>
 </body>
 </html>
-
