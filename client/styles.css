@@ -1,3 +1,9 @@
+/* styles.css */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
 /* Estilizando o corpo do documento */
 body {
     font-family: Montserrat, sans-serif; /* Aplicando a fonte Montserrat em todo o documento */
