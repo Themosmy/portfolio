@@ -1,4 +1,21 @@
- arquitetura de design da página inicial de um site de portfólio:
+##Stack usadas
+
+✅ HTML5 
+✅ CSS3
+✅ JAAVASCRIPT
+✅ TAILWIND CSS
+✅ TYPESCRIPT
+✅ VUE.JS
+✅ NUXT.JS
+✅ VITU.JS 
+✅ NODEJS 
+✅ EXPRESS.JS 
+✅ JEST.JS
+✅ AXIOS
+✅ GITHUB
+✅ POSTREESQL
+
+arquitetura de design da página inicial de um site de portfólio:
 
 1. **Header (Cabeçalho)**:
    - Logo da empresa ou nome do profissional.
@@ -98,19 +115,3 @@ Claro, vamos criar um projeto de sistema para a página inicial do site de portf
    - Se necessário, crie arquivos CSS e JavaScript específicos para a página inicial ou para elementos específicos da página, como estilos ou funcionalidades exclusivas.
 
 Após criar esses arquivos e estruturar o projeto, você pode começar a preencher o conteúdo da página inicial com informações sobre você ou sua empresa, projetos em destaque, serviços oferecidos, depoimentos de clientes e informações de contato. Certifique-se de testar a página em diferentes dispositivos para garantir que ela seja responsiva e ofereça uma boa experiência ao usuário.
-
-stacks usadas
-- HTML5 
-- CSS3
-- JAAVASCRIPT
-- TAILWIND CSS
-- TYPESCRIPT
-- VUE.JS
-- NUXT.JS
-- VITU.JS 
-- NODEJS 
-- EXPRESS.JS 
-- JEST.JS
-- AXIOS
-- GITHUB
-- POSTREESQL
